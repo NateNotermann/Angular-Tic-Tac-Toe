@@ -14,5 +14,9 @@ import { Component } from '@angular/core';
 })
 export class SquareComponent {
 
-  randomNumber = Math.random();
+  randomNumber = 1;
+
+  constructor() {
+    setInterval(() => this.randomNumber = Math.random(), 500);
+  }
 }
